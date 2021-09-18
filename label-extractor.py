@@ -46,7 +46,7 @@ def create_csv():
     """
     This function is used to export a csv file of all the 
     label data in a table with asset hostname and ip_address as 
-    columsn.   
+    columns.   
     """
     host_names,ip_addresses = (extract_label_data())
     df = pd.DataFrame(list(zip(host_names,ip_addresses)),columns=['Host name','IP Address'])
